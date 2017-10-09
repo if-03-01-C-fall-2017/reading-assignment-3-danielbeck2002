@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="HelloWorld.css">
+		<title>Cheat Sheet</title>
+		<meta http-equiv="refresh" content="10">
+	</head>
+	<body>
+		<!-- Sichtbarer Dokumentinhalt im body -->
+		
+		<center> <h1> <p style="color: DarkSlateGrey;">  My personal Cheat Sheet  </p> </h1> </center> </br>
+		
+		<h1><p style="color: DarkMagenta;">  Reading Assignement 2 </p> </h1>
+		
+		<article>
+			<h2> <ins>HTML Basics</ins> </h2>
+			<p>
+				A HTML-Document must start with a "&lt;!DOCTYPE html&gt;"
+				The HTML-Document itself beginns with "&lt;html&gt;". And the body with "&lt;body&gt;".
+			</p>
+			
+
+			<h2> <ins>HTML Elements</ins> </h2>
+			<p>
+				A HTML element usually consists of a start tag and end tag, with the content inserted in between. </br>
+				For example &lt;p&gt;My first paragraph.&lt;/p&gt;  -->;  My first paragraph; </br>
+				HTML elements can be nested (elements can contain elements). All HTML documents consist of nested HTML elements.				
+			</p>
+			
+
+			<h2> <ins>Attributes</ins> </h2>
+			
+			<h3>The href Attributes</h3> 
+			<p>
+				&lt;a href="https://www.youtube.com">Youtube&lt;/a&gt;  --> <a href="https://www.youtube.com">Youtube</a>
+			</p>
+			<h3>The src Attribute & width and height</h3> 
+			<p>
+				Image: </br>
+				&lt;img src="flag-eagle.jpg"&gt; 
+				</br>Image + scale: </br>
+				&lt;img src="flag-eagle.jpg" width="160" height="120"&gt; --> </br> <img src="flag-eagle.jpg" width="160" height="120">				
+			</p>
+			<h3>The alt Attribute</h3>
+			<p>
+				the alt Atrtribut is a text that shows up when the picture doesn't exist or can't be loaded </br>
+				&lt;img src="img_typo.jpg" alt="Girl with a jacket"&gt;  -->  <img src="img_typo.jpg" alt="Girl with a jacket">
+			</p>
+			<h3>The style Attribute</h3>
+			<p>
+				The style attribute is used to specify the styling of an element, like color, font, size etc. </br>
+				&lt;p style="color:red">Example&lt;/p&gt;  -->  <p style="color:red">Example</p>
+			</p>
+			<h3>The titel Attribute</h3>
+			<p 
+				title="I'm a tooltip">Mouse over this paragraph, to display the title attribute as a tooltip.
+			</p>
+			
+
+			<h2> <ins>Headings & Comments<ins> </h2>
+				<p>
+					Headings got 6 differnet sizes. h1 is the biggest and h6 ist the smallest --> &lt;h1&gt;Heading&lt;/h1&gt;
+				</p>
+			
+
+			<h2> <ins>HTML Paragraphs<ins> </h2>
+				<p>
+					&ltp&gt starts an paragraph with the ending tag &ltp&gt you end the paragraph. <br>
+					You do a line break with the attribute &ltbr&gt; 
+					<p> You write a comment like this &lt;!-- This is a comment --&gt; </p>			
+				</p>
+			
+
+			<h2> <ins>HTML Links & Images <ins> </h2>
+				<p>
+					Links: &lt;a href="www.Instagram.com">Instagram&lt;/a&gt;  -->  <a href="https://www.instagram.com/?hl=de">Instagram</a> <br>
+					Images: &lt;img src="html" alt="html" style="width:100;height:80;"  --> <img src="html" alt="html" style="width:100;height:80;">
+				</p>
+			
+
+			<h2> <ins>HTML Head<ins> </h2>
+				<p>
+					The &ltstyle&gt is used to define a certain style in the head <br>
+					the &ltlink&lg is used to link "Style Sheets" to the html file --> &ltlink rel="stylesheet" href="mystyle.css"&gt <br>
+					The &ltscript&gt is used to to define client-side JavaScripts.
+				</p>
+			
+
+			<h2> <ins>CCS Syntax and Selectors<ins> </h2>
+				<p>
+					A CSS rule-set consists of a <b>selector and</b> a <b>declaration</b> block. </br>
+					The selector points to the HTML element you want to style. </br>
+					The declaration block contains one or more declarations separated by semicolons. </br>		
+					With p { "Content" } you can select all Elemetns on a page. </br>
+					The id selector selects a specific element " #paraX { "Content" } " would change the style of the first paragraph
+				</p>
+			
+
+			<h2> <ins>CCS Colors<ins> </h2>
+				<p>
+					HTML supports 140 standard color names.
+					You can set a background color  like this: &lt;h1 style="background-color:DodgerBlue">Hello World&lt;/h1&gt; 
+				</p>
+			
+
+			<h2> <ins>CCS backgrounds<ins> </h2>
+				<p>
+					backgroundcolor: color </br>
+					background-image: url("URL") </br>
+					background-position: right top; </br>
+					background-attachment: fixed;
+				</p> 
+
+			<h2> <ins>CSS Text<ins> </h2>
+				<p>
+					text-align: center; </br>
+					text-indent: 50px; </br>
+					letter-spacing: 3px; </br>
+					word-spacing: 3px; </br>
+					line-hight: 0.8; </br>
+					text-shadow: 3px 2px red; 
+			</p>		
+			
+
+			<h2> <ins>CSS Fonts<ins> </h2>
+				<p>
+					font-family: "Times New Roman", Times, serif; </br>
+					font-style: normal; </br>
+					font-size: 40px; </br>
+				</p>
+						
+
+			<h2> <ins>CSS Combinators<ins> </h2>
+				<p>
+					-The descendant selector matches all elements that are descendants of a specified element. </br>
+					-The child selector selects all elements that are the immediate children of a specified element. </br>
+					-The adjacent sibling selector selects all elements that are the adjacent siblings of a specified element. </br>
+					-The general sibling selector selects all elements that are siblings of a specified element. </br>
+				</p>
+									
+
+			<h2> <ins>CSS Pseudo-classes<ins> </h2>
+			<p>
+				A pseudo-class is used to define a special state of an element.
+			</p>
+					
+		
+		</article>
+		 
+		
+		<h1><p style="color: DarkMagenta;">  Reading Assignement 3 </p> </h1> 
+		
+		
+		<article>
+			<h2> <ins>HTML Lists</ins> </h2>
+			
+				<h3> Unordned HTML Lists </h3>
+				<p>
+					An unordned List starts with &ltul&gt and ends with &lt/ul&gt. Every New List entry in this element starts with &ltli> and ends with &lt/li> </br>
+					<ul>
+						<li>This is an</li>
+						<li>Example</li> 
+					</ul> 
+				</p>
+				
+				<h3> Ordered HTML Lists </h3>
+				<p>
+					A ordered numbered List starts with the &ltol> tag instead of &ltul>. You can make lists inside of lists. Ofcourse they can be a different kind of list.			
+				</p></br>
+				
+			<h2> <ins>CSS Lists</ins> </h2>	
+				<p>
+					The list-style-type property specifies the type of list item marker.
+					The list-style-image property specifies an image as the list item marker.
+					You can Style lists.
+				</p></br>
+			<h2> <ins>HTML Tables</ins> </h2>	
+				<p>
+					An HTML table is defined with the &lttable> tag. </br>
+					Each table row is defined with the &lttr> tag. </br>
+					A table header is defined with the &ltth> tag. </br>
+					By default, table headings are bold and centered. A table data/cell is defined with the &lttd> tag. </br> </br>
+					A border is set using the CSS <b>border</b> property. 
+					To add a caption to a table, use the <b>&ltcaption></b> tag
+				</p></br>
+			<h2> <ins>CSS Tables</ins> </h2>	
+				<p>
+					Width and height of a table are defined by the <b>width</b> and <b>height</b> properties. </br>
+					For zebra-striped tables, use the nth-child() selector and add a background-color to all even (or odd) table rows. </br>
+					Add a container element (like <b> &ltdiv> </b>) with overflow-x:auto around the <b>&lttable></b> element to make it responsive:
+				</p>
+				
+		<h1><p style="color: DarkMagenta;">  Sample Questions 3 </p> </h1> 
+		<article>
+			&ltol> <br>
+			&ltul> <br>
+			&ltdl> <br>
+			&ltli> <br>
+			&ltdt> <br>
+		    &ltdd> <br> <br>
+			
+			
+		</article>
+				
+		
+				
+		
+		
+		</article>
+		
+		
+		
+
+	</body>
+
+</html>
